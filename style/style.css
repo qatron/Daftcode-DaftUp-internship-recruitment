@@ -18,20 +18,20 @@ body {
     left: 0;
     right: 0;
     z-index: 0;
-    margin-top: -10px;
+    padding: 54px 80px 0 ;
 }
 
 /*background*/
 
 .content:before {
 /*
-    
     background-image: url("../img/bg_image.jpg");
     background-repeat: no-repeat;
     background-position: -788px -281px;
     background-color: #001820;
     
 */
+    top: 0;
     background: 
         linear-gradient(to bottom, rgba(0,0,0,0.31), rgba(0,0,0,0.31)),
         url("../img/bg_image.jpg") -788px -281px no-repeat #001820;
@@ -46,21 +46,27 @@ body {
     height: 100%;
 }
 
+/*HEADER*/
 /*logo*/
-
-.logo img {
+.logo {
     display: inline-block;
+}
+.logo img {
     width: auto;
     height: 56px;
 }
 
 /*navigation*/
-
+nav {
+    display: inline-block;
+    float: right;
+}
 nav a {
     text-decoration: none;
 }
 .nav.element {
     display: inline-block;
+    margin-right: 55px;
 }
 .nav.text {
     font-family: 'Raleway', sans-serif;
@@ -72,8 +78,26 @@ nav a {
 }
 .nav.beam {
     display: block;
-    width: auto;
+    width: 0;
     height: 3px;
     background-color: #ffffff;
     border-radius: 1.5px;
+}
+.nav.element.current .nav.beam {
+    width: calc(100% + 8px);
+}
+.nav.element:hover .nav.beam {
+    width: 50%;
+}
+.nav.element.btn {
+    border: 3px solid #ffffff;
+    padding-top: 14px;
+    padding: 11px 33px 0px 33px;
+    border-radius: 6px;
+}
+.nav.element.btn:hover {
+    background-color: #ffffff;
+}
+.nav.element.btn:hover .nav.text {
+    color: #001820;
 }
