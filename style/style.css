@@ -1,18 +1,8 @@
 @charset "utf-8";
-/* CSS Document */
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Raleway:200,600');
+/* CSS Document */
 
-/*
 
-body {
-    background-image: url("../img/bg_image.jpg");
-    background-repeat: no-repeat;
-    background-position: -788px -281px;
-    background-color: #001820;
-    
-}
-
-*/
 .content {
     position: fixed;
     left: 0;
@@ -22,22 +12,14 @@ body {
 }
 
 /*background*/
-
 .content:before {
-/*
-    background-image: url("../img/bg_image.jpg");
-    background-repeat: no-repeat;
-    background-position: -788px -281px;
-    background-color: #001820;
-    
-*/
-    top: 0;
     background: 
         linear-gradient(to bottom, rgba(0,0,0,0.31), rgba(0,0,0,0.31)),
         url("../img/bg_image.jpg") -788px -281px no-repeat #001820;
     
     content: "";
     position: fixed;
+    top: 0;
     left: 0;
     right: 0;
     z-index: -1;
@@ -56,12 +38,12 @@ body {
     height: 56px;
 }
 
-/*navigation*/
-nav {
+/*navigation default*/
+.menu.default {
     display: inline-block;
     float: right;
 }
-nav a {
+.menu.default * {
     text-decoration: none;
 }
 .nav.element {
@@ -72,7 +54,7 @@ nav a {
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
     color: #ffffff;
-    font-stretch: condensed;
+    font-stretch: extra-condensed;
     text-transform: uppercase;
     margin-bottom: 10px;
 }
