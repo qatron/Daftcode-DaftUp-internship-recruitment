@@ -12,16 +12,6 @@
     padding: 39px 80px 0;
 }
 
-#embed-load {
-    visibility: hidden;
-    width: 0;
-    height: 0;
-}
-#embed-load *{
-    visibility: hidden;
-    width: 0;
-    height: 0;
-}
 
 /*background*/
 .content:before {
@@ -165,9 +155,18 @@ footer {
     float: left;
 }
 .social.img.fb img{
+    width: 24px;
+    height: 24px;
+}
+.social.img.twitter img{
     width: 27px;
     height: 22px;
 }
+.social.img.google img{
+    width: 31px;
+    height: 21px;
+}
+
 .social.text {
     font-family: 'Open Sans';
     color: #ffffff;
