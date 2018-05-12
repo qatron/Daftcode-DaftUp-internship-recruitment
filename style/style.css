@@ -138,13 +138,14 @@ body {
 footer {
     position: relative;
     display: block;
+    height: 195px;
+    margin-top: 123px;
 }
 .footer.text {
     font-family: 'Open Sans';
     color: #ffffff;
     font-size: 19px;
     text-align: center;
-    margin-top: 123px;
     letter-spacing: -0.45px;
 }
 
@@ -194,4 +195,36 @@ footer {
     font-size: 16px;
     margin-left: 14px;
     margin-top: 2px;
+}
+
+/*arrow*/
+.triangle.container {
+    margin-top: 60px;
+    height: 62px;
+    width: 126px;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    clip-path: polygon(45% 0, 55% 0, 100% 100%, 0% 100%);
+}
+.triangle img {
+    width: inherit;
+    height: inherit;
+    display: block;
+}
+.triangle.text {
+    position: absolute;
+    display: block;
+    left: 0;
+    right: 0;
+    bottom: 15px;
+    margin: 0px auto 0px auto;
+    text-align: center;
+    font-family: 'Open Sans';
+    color: #000000;
+    text-transform: uppercase;
+    font-size: 14px;
+    
 }
