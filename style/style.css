@@ -36,6 +36,12 @@ body {
 .header.hamburger {
     display: none;
 }
+
+/*navigation mobile*/
+.mobile-nav.container {
+    display: none;
+}
+
 /*navigation default*/
 .menu.default {
     display: inline-block;
@@ -471,7 +477,102 @@ footer {
     .menu.default {
         display: none;
     }
-
+    
+    /*navigation mobile*/
+    .mobile-nav.container{
+        display: none;
+        background-color: #001820;        
+    }
+    .mobile-nav.container.show {
+        display: block;
+        position: absolute;
+        z-index: 1;
+        width: 100vw;
+        height: 100vh;
+    }
+    
+    .mobile-nav.top {
+        height: 30px;
+        margin-top: 25px;
+        display: flex;
+        justify-content: center;
+    }
+    .mobile-nav.logo {
+        display: block;
+        width: auto;
+        height: 29px;
+        margin-top: 1px;
+    }
+    .mobile-nav.close {
+        position: absolute;
+        display: block;
+        width: 21px;
+        height: 21px;
+        right: 26px;
+    }
+    .mobile-nav.menu.container{
+        position: relative;
+        width: 100vw;
+        height: 353px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 32px;
+    }
+    .mobile-nav.menu.link {
+        text-decoration: none;
+        display: block;
+        margin: 20px auto;
+    }
+    .mobile-nav.menu.element {
+        width: 198px;
+        height: 35px;
+        display: flex;
+        justify-content: center;
+    }
+    .mobile-nav.menu.element.btn {
+        border: 3px solid #ffffff;
+        border-radius: 6px;
+        margin-top: 12px;
+    }
+    .mobile-nav.menu.element.btn .text {
+        margin-left: -2px;
+    }
+    .mobile-nav.menu.text {
+        font-family: 'Open Sans';
+        font-weight: 400;
+        color: #ffffff;
+        text-transform: uppercase;
+        font-size: 16px;
+        margin-top: 6px;
+    }
+    .mobile-nav.social.container {
+        height: 24px;
+        width: 204px;
+    }
+    .mobile-nav.social {
+        display: block;
+    }
+    .mobile-nav.social > .link {
+        display: inline-block;
+        height: inherit;
+        margin: auto;
+    }
+    .mobile-nav.social.facebook {
+        width: 24px;
+        height: 24px;
+    }
+    .mobile-nav.social.twitter {
+        width: 24px;
+        height: 18px;
+        margin-top: 3px;
+        margin: 3px 62px 0;
+    }
+    .mobile-nav.social.google {
+        width: 24px;
+        height: 17px;
+        margin-top: 3px;
+    }
+    
     /*MAIN CONTENT*/
     #main {
         margin-top: 42px;

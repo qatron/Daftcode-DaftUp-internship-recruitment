@@ -9,11 +9,58 @@
 
 <body>
     <div class="content">
+        <nav id="mobileMenu" class="mobile-nav container">
+            <div class="mobile-nav top">
+                <img class="mobile-nav logo" src="img/logo_awesome.svg" alt="logo"/>
+                <img class="mobile-nav close" onClick="switchMenu()" src="img/iks.svg" alt="close"/>
+            </div>
+            <div class="mobile-nav menu container">
+                <a class="mobile-nav menu link" href="#">
+                    <div class="mobile-nav menu element">
+                        <div class="mobile-nav menu text">
+                            features
+                        </div>
+                    </div>
+                </a>
+                <a class="mobile-nav menu link" href="#">
+                    <div class="mobile-nav menu element">
+                        <div class="mobile-nav menu text">
+                            case studies
+                        </div>
+                    </div>
+                </a>
+                <a class="mobile-nav menu link" href="#">
+                    <div class="mobile-nav menu element">
+                        <div class="mobile-nav menu text">
+                            about
+                        </div>
+                    </div>
+                </a>
+                <a class="mobile-nav menu link" href="#">
+                    <div class="mobile-nav menu element btn">
+                        <div class="mobile-nav menu text">
+                            contact
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="mobile-nav social container">
+                <a class="mobile-nav social link">
+                    <img class="mobile-nav social facebook" src="img/facebook.svg" alt="facebook"/>
+                </a>
+                <a class="mobile-nav social link">
+                    <img class="mobile-nav social twitter" src="img/twitter.svg" alt="twitter"/>
+                </a>
+                <a class="mobile-nav social link">
+                    <img class="mobile-nav social google" src="img/googleplus.svg" alt="google+"/>
+                </a>
+            </div>
+        </nav>
         <header class="header default">
             <div class="logo">
                 <img src="img/logo_awesome.svg" alt="awesome logo"/>
             </div>
-            <div class="header hamburger">
+            <div class="header hamburger" onclick="switchMenu()">
                 <img src="img/hamburger_menu.svg" alt="mobile menu button"/>
             </div>
             <nav class="menu default">
@@ -116,6 +163,9 @@
             setTimeout(function(){
                 $('.square').addClass('rotate');
             }, 10);
+        }
+        function switchMenu() {
+            $('#mobileMenu').toggleClass('show');
         }
     </script>
 </body>
