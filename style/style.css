@@ -3,6 +3,9 @@
 /* CSS Document */
 
 /*ALL RES*/
+html, body {
+    height: 100%;
+}
 body {
     margin: 0;
 }
@@ -12,7 +15,7 @@ body {
     left: 0;
     right: 0;
     z-index: 0;
-    height: 100vh !important;
+    height: 100% !important;
 }
 
 /*background*/
@@ -153,7 +156,7 @@ footer {
 /*RESOLUTION 1440x900*/
 @media screen and (min-width: 1440px) {
     .content {
-        height: 900px;
+        min-height: 900px;
         padding: 47px 80px 0;
     }
 
@@ -293,7 +296,7 @@ footer {
 /*RESOLUTION 1024x768*/
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
     .content {
-        height: 768px;
+        min-height: 768px;
         padding: 44px 40px 0;
     }
 
@@ -432,7 +435,7 @@ footer {
 
 @media screen and (max-width: 1023px) {
     .content {
-        height: 530px;
+        min-height: 530px;
         padding: 0px;
     }
 
