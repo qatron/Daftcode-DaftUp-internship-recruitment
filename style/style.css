@@ -537,6 +537,12 @@ footer {
     .mobile-nav.menu.element.btn .text {
         margin-left: -2px;
     }
+    .mobile-nav.element.btn:hover {
+         background-color: #ffffff;
+    }
+    .mobile-nav.element.btn:hover .text {
+        color: #001820;
+    }
     .mobile-nav.menu.text {
         font-family: 'Open Sans';
         font-weight: 400;
@@ -548,26 +554,28 @@ footer {
     .mobile-nav.social.container {
         height: 24px;
         width: 204px;
-    }
-    .mobile-nav.social {
-        display: block;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
     }
     .mobile-nav.social > .link {
         display: inline-block;
         height: inherit;
-        margin: auto;
+        margin: initial;
     }
     .mobile-nav.social.facebook {
+        display: block;
         width: 24px;
         height: 24px;
     }
     .mobile-nav.social.twitter {
+        display: block;
         width: 24px;
         height: 18px;
         margin-top: 3px;
-        margin: 3px 62px 0;
     }
     .mobile-nav.social.google {
+        display: block;
         width: 24px;
         height: 17px;
         margin-top: 3px;
