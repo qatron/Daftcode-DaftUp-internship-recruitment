@@ -21,7 +21,7 @@ body {
 /*background*/
 .content:before {
     content: "";
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     right: 0;
@@ -165,7 +165,7 @@ footer {
     .content:before {
         background: 
             linear-gradient(to bottom, rgba(0,0,0,0.31), rgba(0,0,0,0.31)),
-            url("../img/bg_image.jpg") -788px -282px no-repeat #001820;
+            url("../img/bg_image.jpg") calc(50% - 212px) -282px no-repeat #001820;
     }
 
     /*HEADER*/
@@ -304,7 +304,7 @@ footer {
     .content:before {
         background: 
             linear-gradient(to bottom, rgba(0,0,0,0.31), rgba(0,0,0,0.31)),
-            url("../img/bg_image.jpg") -621px -195px/1970px 1313px no-repeat #001820;
+            url("../img/bg_image.jpg") calc(50% - 148px) -195px/1970px 1313px no-repeat #001820;
     }
 
     /*HEADER*/
@@ -443,7 +443,7 @@ footer {
     .content:before {
         background: 
             linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-            url("../img/bg_image.jpg") -558px -135px/1244px 830px no-repeat #001820;
+            url("../img/bg_image.jpg") calc(50% - 97px) -135px/1244px 830px no-repeat #001820;
     }
 
     /*HEADER*/
